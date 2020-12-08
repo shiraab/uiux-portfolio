@@ -1,14 +1,82 @@
 <!doctype html>
 
-<html>
+<html lang='en'>
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
+    <title>A Fun Portfolio</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
     <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <span id="title-menu">
+  <h1>Egg's Portfolio</h1>
+  <a id="skip-nav" class="sr-only sr-only-focusable" href="#main">Skip to blurb</a>
+  <a id="skip-proj" class="sr-only sr-only-focusable" href="#project-grid">Skip to projects</a>
+  <a id="skip-contact" class="sr-only sr-only-focusable" href="#contact-container">Skip to contact</a>
+  <div id="menu" role="navigation">
+    <a class="curr-page" href="./home.html">Home</a>
+    <a href="./about.html">About this site</a>
+    <a>Contact</a>
+  </div>
+</span>
+  <div id="main" role="main">
+    <div id="top">
+    <div id="blurbdiv">
+      <div class="round-img-container">
+        <img src='./pumpkin.png' alt="image of a pumpkin floating in a lake"/>
+      </div>
+      <p class="blurb">Egg is a designer and developer with a flair for inclusive web design.
+        She specializes in responsible and accessible development for the arts, literature,
+        and social change.</p>
+    </div>
+      <!-- <p class="note">This site is currently being updated. Stay tuned!</p> -->
+    </div>
+    <div id='project-wrapper'>
+      <div id="project-grid">
+        <a href='./redesign.html'>
+          <button class="project" id='redesign'>
+            <h3>Getting to "I voted!"</h3>
+            <p class="subtitle">An election site redesign</p>
+          </button>
+        </a>
+        <a href='./formally.html'>
+          <button class="project" id='formally'>
+            <h3>Rebuilding Formally</h3>
+            <p class="subtitle">Helping immigrants get the help they need</p>
+          </button>
+        </a>
+        <a href='./development.html'>
+          <button class="project" id='development'>
+            <h3>Happy Accidents</h3>
+            <p class="subtitle">A playful site based on Bob Ross's The Joy of Painting</p>
+          </button>
+        </a>
+        <a href='./iterative.html'>
+        <button class="project" id='iterative'>
+          <h3>Lactation Lab</h3>
+          <p class="subtitle">A seamless experience for breastfeeding parents</p>
+        </button>
+      </a>
+      </div>
+    </div>
+  </div>
+    <div id="contact-container">
+      <span id="contact">
+        <h2>Contact:</h2>
+          <ul>
+            <li><a>Email</a></li>
+            <li><a>LinkedIn</a></li>
+            <li><a>GitHub</a></li>
+          </ul>
+      </span>
+      <span class='inline'>
+        <p class="note">Resume available upon request.</p>
+      </span>
+    </div>
   </body>
 </html>

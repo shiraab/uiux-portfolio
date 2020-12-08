@@ -1,0 +1,255 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Iterative Design: Lactation Lab</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body id='iterative-page'>
+    <span id="title-menu">
+      <h1>Egg's Portfolio</h1>
+      <a id="skip-nav" class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+      <a id="skip-contact" class="sr-only sr-only-focusable" href="#contact-container">Skip to contact</a>
+      <div id="menu" role="navigation">
+        <a href="./home.html">Home</a>
+        <a href="./about.html">About this site</a>
+        <a>Contact</a>
+      </div>
+      </span>
+    <div id="title-section">
+      <a class='back-to-projects' href='./home.html#project-wrapper'><button><img src='arrow-left.svg' alt='left arrow'/>Back to projects</button></a>
+      <div class='splash-wrapper'>
+        <img src="./lactation-lab.svg" alt="Lactation Lab Logo">
+      </div>
+      <h1>Lactation Lab</h1>
+      <h2 class='subtitle'>From Idea to Interface</h2>
+    </div>
+    <div id="main" class='project-page'>
+      <h3>Context</h3>
+      <p>
+        As a group of a few designers, we were interested in how new startups
+        come up with a design for their company. We combed through recently-funded
+        startups, looking for one that caught our eye, and set out to create a new design
+        for the product – without ever having seen a real website.
+      </p>
+      <h3>The Company</h3>
+      <p>
+        As we were looking through some lists of newly-funded startups, we found
+        tons of cool new companies. One that caught our eye was <a href="https://www.lactationlab.com/">Lactation Lab</a>,
+        a company which aims to help breastfeeding parents know what's in their milk.
+      </p>
+      <p>
+        Lactation Lab provides breast milk analysis and personalized recommendations for mothers to optimize their child's health and nutrition. Lactation Lab sells breast milk test analysis kits, such that a user sends in a sample with a purchased kit and can choose from a selection of tests to be run on their sample. We chose to focus on a desktop website interface, as people are more likely to online shop on a computer and because the results and recommendations are only given once and not updated, so they are not something a user would be constantly checking, which would indicate a mobile app.
+      </p>
+      <p>
+        Users for this site would likely be breastfeeding parents (possibly repeat customers) who care about
+        their health and the health of their children, as this product would help them ensure
+        their milk is optimized for that purpose. This site may also attract users that are very
+        interested in natural breastfeeding and normalizing breastfeeding
+        because they would be willing to invest in this passion, despite being
+        expensive. This startup also donates test kits to a hospital, so some
+        clients would be parents at this hospital or the hospital itself using the donation they received.
+      </p>
+      <h3>Sketches</h3>
+      <p>As a group, we each created several rough sketches with the goal
+        of getting any and all ideas flowing, even ones which seemed a little
+        off the wall. Here are six of our favorite sets.</p>
+        <div class='image-card'>
+          <img class="img-fluid border border-dark" src="sketch6.jpg">
+          <img class="img-fluid border border-dark" src="sketch2.jpg">
+        </div>
+        <div class='image-card'>
+          <img class="img-fluid border border-dark" src="sketch1.jpeg">
+        </div>
+        <div class='image-card'>
+          <img class="img-fluid border border-dark" src="sketch4.jpeg">
+          <img class="img-fluid border border-dark" src="sketch5.jpeg">
+        </div>
+        <div class='image-card'>
+          <img class="img-fluid border border-dark" src="sketch3.jpeg">
+        </div>
+      <h3>Lo-Fi Mockup</h3>
+      <p>After comparing sketches and chatting about our ideas, we came to the conclusion
+      that we wanted to include a basic questionnaire to help parents understand which
+      testing package would fit them best, as well as a test results page and further information on nutrients.
+      We also included a page with all products and an ordering page.</p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGC7wnjMk9VFHXYhhgTRfWB%2FLactation%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+      <p>The major design decision that went into this mockup from the sketches was to
+        have a home page, starter quiz, products page, order page, results page, and info center. Our sketches encompassed range of different pages
+        to achieve the same overall goal that flowed surprisingly well together, so we chose to combine them into one
+        total product! We wanted to have a very clear flow, so we wanted a more unsure user to be able to have a quiz to pick their product, while an informed
+        user can pick on the product page from the full selecton. From there, they can order, and then view their results.
+        From the proposed results layouts, we chose to have it displayed online instead of emailed or mailed, so the user will never lose it and can continue to easily reference it.
+        Also, if there was a repeat user, their various results would be easier to compare. We chose to have each test on its own tab with its results and recommendations, to reduce visual distraction
+        and leave room for more information and graphics for each.
+        However, we had the tabs indicate a summary of each test, so the user can get an overall sense of their results at first glance.
+        To get more informed for either choosing a product or about results,
+        users can reference the info center, which will also show their results if a user is logged in.
+
+      </p>
+
+      <h3>Initial Hi-Fi Prototype</h3>
+      <p>We created an interactive prototype based on the lo-fi mockup we created. In particular, we made
+      the initial questionnaire entirely interactive and designed a new logo for the company, which incorporates
+      a droplet outline with a graph-like zigzag.</p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGC7wnjMk9VFHXYhhgTRfWB%2FLactation%3Fnode-id%3D22%253A136%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+      <p>The major design choices that went into this prototype in adapting the lofi mockup
+          came from creating a visual design guide, in which we chose a color palette of six colors to work with exclusively for consistenty,
+          a designated header font and designated content font, button styling, and a logo. Other than that, this mockup
+          mostly followed from beautifying the lofi mockup and adding navigations between pages for buttons and the menu, with dropdown buttons, and the full quiz functionality.
+       </p>
+      <h3>Critique</h3>
+      <p>Using our initial hi-fi prototype, we participated in a critique session. We received lots of
+      useful feedback! Some suggestions were:</p>
+      <ul>
+        <li>Include a clear explanation on the homepage of what product is or what the startup is trying to accomplish, in text or other media.</li>
+        <li>Include a description of the different kits - perhaps individual product pages?</li>
+        <li>Provide the option to go straight from quiz results to page for the suggested kit.</li>
+        <li>Perhaps for a future iteration - think about adding a subscription page or a cart.</li>
+        <li>UI Notes: Make buttons shadowed so it's more obvious that they're clickable, align text and flowchart on homepage.</li>
+        <li>Add some more charts or graphs to results page.</li>
+        <li>Remove navigation on payment page.</li>
+        <li>On product pages, change plus signs to something else, since they give the impression of adding to cart, not expanding.</li>
+      </ul>
+      <h3>Post-Critique Revisions</h3>
+      <p>Based on this feedback, we made a final iteration of our prototype, largely focusing on providing more information for users about what they are actually purchasing on the homepage, before ordering, and graphically in results, but also incorporating all other smaller pieces of feedback we received.</p>
+      <p>If you prefer, feel free to take a look at <a href="https://www.figma.com/file/GC7wnjMk9VFHXYhhgTRfWB/Lactation">the frame view of our Figma.</a></p>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FGC7wnjMk9VFHXYhhgTRfWB%2FLactation%3Fnode-id%3D196%253A1578%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+      <h3>User Testing</h3>
+      <p>Three users tested our prototype. They were given this scenario:</p>
+      <p>Imagine you're a new parent committed to breastfeeding your newborn.
+        You want to make sure you or your partner's breastmilk provides the
+        healthiest and safest nutrients possible for your baby, so you turn to
+        Lactation Labs for breastmilk analysis. Your objective is to complete
+        the process of ordering and using a breastmilk analysis test.</p>
+      <p>This is not an actual website, but rather an interactive mockup made
+        on prototyping software. This means that not every single button may
+        be clickable. You won't be able to enter text, and not every page may
+        have the text or content you expect! This is normal. Please do your
+        best to complete the task nonetheless.</p>
+      <p>They were given these subtasks:</p>
+      <ol>
+        <li>Take the starter quiz.</li>
+        <li>Order the recommended product.</li>
+        <li>Return to the home page.</li>
+        <li>Pretending that you've just gotten an email that your results are in, log in to view the results.</li>
+      </ol>
+      <p>After each subtask (excluding "Return to the home page", a simpler subtask), they were asked to describe their success and difficulty for each subtask. After the task, they were asked the following questions:</p>
+      <ol>
+        <li>On a scale of 1 to 5, 1 being "extremely confusing" and 5 being "extremely clear", how would you rate your experience of navigating the task on the prototype?</li>
+        <li>What, if anything, surprised you about the experience?</li>
+        <li>What, if anything, did you like the most about completing the task?</li>
+        <li>What, if anything, did you like the least about completing the task?</li>
+      </ol>
+      <p>Here are our user testing results and how they influence our potential future steps.</p>
+      <h4>User testing videos</h4>
+      <h5><a href="https://drive.google.com/file/d/1LFXbUCfPKo73xeze0rAjePZ9VR96V4n3/view?usp=sharing">User 1</a></h5>
+      <iframe src="https://drive.google.com/file/d/1LFXbUCfPKo73xeze0rAjePZ9VR96V4n3/preview" width="640" height="480"></iframe>
+      <h5><a href="https://drive.google.com/file/d/1Wvtfq0kbvviXTao2hthu8adDYgMSwRyM/view?usp=sharing">User 2</a></h5>
+      <iframe src="https://drive.google.com/file/d/1Wvtfq0kbvviXTao2hthu8adDYgMSwRyM/preview" width="640" height="480"></iframe>
+      <h5><a href="https://drive.google.com/file/d/19nf9eLtqlbMPtQiM0K_gLVCuihGy9yPW/view?usp=sharing">User 3</a></h5>
+      <iframe src="https://drive.google.com/file/d/19nf9eLtqlbMPtQiM0K_gLVCuihGy9yPW/preview" width="640" height="480"></iframe>
+      <!-- <ul>
+        <li><a href="https://drive.google.com/file/d/1LFXbUCfPKo73xeze0rAjePZ9VR96V4n3/view?usp=sharing">User 1</a></li>
+        <li><a href="https://drive.google.com/file/d/1Wvtfq0kbvviXTao2hthu8adDYgMSwRyM/view?usp=sharing">User 2</a></li>
+        <li><a href="https://drive.google.com/file/d/19nf9eLtqlbMPtQiM0K_gLVCuihGy9yPW/view?usp=sharing">User 3</a></li>
+      </ul> -->
+      <h4>User interaction</h4>
+      <ul>
+        <li>All three users followed the same flow through the tasks, clicking on the starter quiz directly from the homepage, skipping the listing page and going directly to purchasing their kit.</li>
+        <li>No users made mistakes and had to backtrack, and each completed the task in less than 5 minutes. </li>
+      </ul>
+      <h4>Summarized general user feedback</h4>
+      <ul>
+        <li>All users responded for each task that they completed the entire task successfully and that the task was "very easy". </li>
+        <li>All users commented on how simple the website was and how big the text and buttons were: they all liked that this made it usable, but some thought the setup was accessible and some thought it was unprofessional and should have more text. </li>
+        <li>Users were not very surprised by anything and liked the intuitive setup. </li>
+      </ul>
+      <h4>Summarized specific user issues/suggestions</h4>
+      <ul>
+        <li>One user noticed that the website's text was in second person, assuming the user was the breastfeeding parent and not a partner. </li>
+        <li>The same user suggested that information about potentially dangerous substances (e.g. arsenic) was a strong reason to want to purchase this product and therefore information about this should be on the homepage.</li>
+      </ul>
+      <h4>All post-task questionnaire responses</h4>
+      <table>
+        <tr>
+          <th>Question</th>
+          <th>User 1 Response</th>
+          <th>User 2 Response</th>
+          <th>User 3 Response</th>
+        </tr>
+        <tr>
+          <td>On a scale of 1 to 5, 1 being "extremely confusing" and 5 being "extremely clear", how would you rate your experience of navigating the task on the prototype?</td>
+          <td>5</td>
+          <td>Extremely clear, 5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>What, if anything, surprised you about the experience?</td>
+          <td>I was surprised at how easy this website was to navigate, usually the websites that I test are over-complicated but this one was great!</td>
+          <td>There were no surprises, this was very straightforward!</td>
+          <td>The fact that this type of analysis exists? Never heard of breast milk analysis before.</td>
+        </tr>
+        <tr>
+          <td>What, if anything, did you like the most about completing the task?</td>
+          <td>I liked following the interactive buttons as they were easy to locate and use.</td>
+          <td>I liked how easy it was and how accessible the information was. The information needed was all in a logical order.</td>
+          <td>Straightforward, nothing too invasive like SIN numbers and whatnot.</td>
+        </tr>
+        <tr>
+          <td>What, if anything, did you like the least about completing the task?</td>
+          <td>I think the website could use a little more colour.</td>
+          <td>The website feels a bit clunky. I understand it's a mockup, but would suggest doing some more refinement here!</td>
+          <td>Nothing really, pretty simple.</td>
+        </tr>
+      </table>
+<br>
+      <p>These results were within our expectations, if anything more positive than we expected. There were some small suggestions
+        that none of us would have thought of (such as the
+        text in the quiz being in second person), which were very helpful! Other tips were more anticipated, like adding a margin or refining the site more.</p>
+
+      <h4>Potential next steps</h4>
+      <ul>
+        <li>Add a margin throughout the page so all other information is visually scaled down and less overwhelming without reducing usability.</li>
+        <li>Rewrite the text throughout the website so it does not assume the user is the same as the breastfeeding parent.</li>
+        <li>Add a question at the beginning of the quiz asking "Are you the breastfeeding parent, or are you looking to purchase a kit for someone else?"</li>
+        <li>Add more information to the home page including a display of what harmful substances are being tested that can grab the customer's attention.</li>
+      </ul>
+
+      <h3>Reflection and Takeaways</h3>
+      <p>This was our first time going through the entire iterative design process
+        from start to finish, including discussion, consensus, critique, and user testing.
+        The experience of going through that process truly made us realize how important it
+        is to get a variety of user perspectives – from users, casual visitors, and more. <br><br>
+
+        We also had a chance to email the startup with our design, and they responded saying
+        that our instincts were good – and that they were actually working on a quiz feature
+        which we had created on our own prototype!<br><br>
+
+        Overall, it was fascinating to go through the design process together,
+        and to have a chance to tweak and change our design throughout the process.
+        Every new set of eyes helped us find new things to change and improve, resulting
+        in a much better final product!
+</p>
+    </div>
+    <div id="contact-container">
+      <span id="contact">
+        <h2>Contact:</h2>
+          <ul>
+            <li><a>Email</a></li>
+            <li><a>LinkedIn</a></li>
+            <li><a>GitHub</a></li>
+          </ul>
+      </span>
+      <span class='inline'>
+        <p class="note">Resume available upon request.</p>
+      </span>
+    </div>
+  </body>
+</html>

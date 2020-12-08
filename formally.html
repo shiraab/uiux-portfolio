@@ -1,0 +1,245 @@
+<html lang='en'>
+  <head>
+    <title>Formally</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body id='formally-page'>
+  <span id="title-menu">
+    <h1>Egg's Portfolio</h1>
+    <a id="skip-nav" class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+    <a id="skip-contact" class="sr-only sr-only-focusable" href="#contact-container">Skip to contact</a>
+    <div id="menu" role="navigation">
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About this site</a>
+      <a>Contact</a>
+    </div>
+    </span>
+    <div id="title-section">
+      <a class='back-to-projects' href='./home.html#project-wrapper'><button><img src='arrow-left.svg' alt='left arrow'/>Back to projects</button></a>
+      <div class='splash-wrapper'>
+        <img src="./formally.png" alt="Formally bird">
+      </div>
+      <h1>Formally</h1>
+      <h2 class='subtitle'>Helping asylum seekers get legal aid</h2>
+    </div>
+    <div id="main" class='project-page'>
+      <h3>Context</h3>
+      <p>
+        <a href='https://formally.us/home'>Formally</a> is a startup based in Palo Alto, CA, whose mission is to help
+        asylum seekers get the legal help they need. Founded in 2018, the company
+        arose out of the clear need for both good client-management and <b>form-filling software</b> for attorneys,
+        and <b>reliable, easy-to-understand information on the immigration process</b> for asylum seekers.
+        This need has become especially dire
+        during the Trump presidency and, more recently, during the socially-distanced
+        pandemic era.
+      </p>
+      <p>
+        As the grandchild of refugees and the daughter of US immigrants, I believe
+        strongly that every immigrant is worthy of dignity. As a result, my time
+        at Formally felt incredibly purposeful and meaningful – even on days when I was fighting
+        with CSS to get a hamburger menu to animate properly.
+      </p>
+      <div class='image-card'>
+        <img src='./jank-burg.gif' alt='gif of a hamburger menu animation gone wrong'/>
+        <p>A hamburger-menu-to-be – unfortunately, a little off-kilter.</p>
+      </div>
+      <p>
+        On paper, my role at Formally was as a <b>Frontend Web Developer</b>. In practice,
+        I spent my days both developing component upon component in React, and
+        doing other "odd jobs" such as content writing, research, and backend work –
+        whatever needed doing on any particular day.
+      </p>
+      <h3>Projects</h3>
+      <p>
+        I was asked to focus on redoing Formally's homepage and navigation experience both
+        on Web and on Mobile,
+        as well as creating an all-new workflow to help users navigate complex
+        processes through USCIS.
+      </p>
+      <p>
+        <b>
+        This writeup will focus on the redesign of the homepage from ideation all the way
+        to launch!
+        </b>
+      </p>
+      <h3>Process Overview</h3>
+      <p>
+        My priority for the summer was revamping as many components as I could, which included
+        working with a designer to finalize designs, doing research into policy issues,
+        writing content for web pages and new components, and creating "magic" in user interactions. For the
+        homepage project, this meant creating an all-new mobile menu (think hamburger!), a new footer,
+        and writing content for the homepage.
+      </p>
+      <p>For the homepage, our development process went as follows:</p>
+      <ol>
+        <li>Research & content writing</li>
+        <li>Design discussions</li>
+        <li>Implementation</li>
+        <li>Review & Iteration</li>
+        <li>Launch!</li>
+      </ol>
+      <h3>Research & Content Writing</h3>
+      <p>
+        The homepage project was part of a branding effort on Formally's part. The old
+        homepage dated from 2018 and was in dire need of a revamp. As a result, our designer
+        was hard at work creating a new site – but she needed new content before she could
+        finish the design.
+      </p>
+      <p>
+        Working closely with the co-founders, I rewrote every text on the homepage, ranging
+        from the introductory "Why Formally?" element to the marketing blurbs explaining
+        how the site works. Because I had already been with Formally for over a month when the
+        homepage project started, I was already somewhat familiar with Formally's core
+        functionality and the visions that the founders have for its future – but that
+        isn't what a homepage has to communicate. My research therefore focused on the following
+        questions:
+      </p>
+      <ul>
+        <li>What issues are most important to attorneys who use Formally?</li>
+        <li>What issues are most important to asylum seekers who use Formally?</li>
+        <li>What do other sites highlight on their homepages?</li>
+        <ul><li>What about other sites that help users find immigration assistance?</li></ul>
+      </ul>
+      <p>My answers were as follows:</p>
+      <h4>What issues are most important to attorneys who use Formally?</h4>
+      <p>
+        Attorneys' most scarce resource, I discovered, is <b>time.</b> Immigration
+        litigation is often thankless work, and some of the people most in need never
+        get legal aid because attorneys simply don't have the time to manage the number
+        of cases they receive.
+      </p>
+      <p><i>Key Takeaway 1: Highlight Formally's time-saving potential, so lawyers understand
+        how Formally can help them.</i></p>
+      <p>
+        They're also suspicious of software that claims to reduce personnel or otherwise
+        make the immigration process more "efficient," and with good reason. Legal systems
+        are all about people – it's impossible to take lawyers out of them.
+      </p>
+      <p><i>Key Takeaway 2: Make sure to highlight lawyers' important work, so that
+      attorneys know that Formally isn't here to replace them, but rather to help them
+      do their jobs more easily! </i></p>
+      <h4>What issues are most important to asylum seekers who use Formally?</h4>
+      <p>
+        The process of seeking asylum in the US is long and complicated – and unfortunately,
+        there are a lot of people who are willing to take advantage of people's pain, including
+        the U.S. Government. Asylum seekers are rightfully wary of being tracked, or of making
+        a wrong move by accident, and many fear their information falling into the wrong hands.
+      </p>
+      <p><i>Key Takeaway 1: Highlight Formally's strong security and data privacy.</i></p>
+      <p><i>Key Takeaway 2: Take a compassionate tone – make it clear that we're here to help.</i></p>
+      <h4>What do other sites – immigration-related and otherwise – highlight on their pages?</h4>
+      <p>In a survey of a number of other sites' homepages, I discovered that many had the following features:</p>
+      <ul>
+        <li>A catchy slogan on a splash image</li>
+        <li>Testimonials and/or awards</li>
+        <li>A description of how the product works</li>
+        <li>A mission statement</li>
+        <li>Calls to action throughout the page</li>
+      </ul>
+      <p><i>Key Takeaway 1: Include a list of awards Formally has won on the front page.</i></p>
+      <p><i>Key Takeaway 2: Describe key features of the product in each blurb.</i></p>
+      <p><i>Key Takeaway 3: Include testimonials wherever possible, especially if they come with calls to action!</i></p>
+      <p>After clarifying these key takeaways, I wrote and rewrote the short blurbs to make them as snappy
+        and tonally consistent as possible, iterating on each piece of text with the founders' help.
+        Once we finished writing the site copy, we were ready to finalize the design and
+        move on to development.
+      </p>
+      <h3>Design discussions</h3>
+      <p>
+        Even during the research process, I met with our UI/UX designer routinely to clarify
+        which parts of the design were most important, and which new features were a priority
+        from her perspective. Before building the final site, we settled on a "minimum viable product"
+        or "first iteration" design together:
+      </p>
+      <div class='image-card'>
+        <img src='./formally-homepage.png' alt='exported Figma page displaying page regions'/>
+        <p>Design by <a href='http://www.brianadas.com/'>our designer.</a> Annotations by me.</p>
+      </div>
+      <h3>Implementation</h3>
+      <p>Implementation occurred in four parts:</p>
+        <ol>
+          <li>Building the new navigation bar</li>
+          <li>Building the new footer</li>
+          <li>Building a proprietary carousel</li>
+          <li>Finishing the homepage!</li>
+        </ol>
+        <h4>Navigation bar</h4>
+        <p>
+          The navigation bar had already been in the works before we made the homepage.
+          Most of the implementation centered on the mobile version, which has a hamburger menu
+          which I made myself. Lesson learned: effective UX takes a lot more work than importing new components!
+        </p>
+        <div class='image-card'>
+          <img src='./navbar-redesign.gif' alt='demonstration of new hamburger menu'/>
+          <p>Demo of hamburger menu during development</p>
+        </div>
+        <h4>Footer</h4>
+        <p>
+          The new footer was much more straightforward than the navbar, but likewise had to be
+          re-implemented to be responsive.
+        </p>
+        <h4>Carousel</h4>
+        <p>
+          This was the most challenging part of the homepage. I experimented with lots of
+          different animation libraries in the hopes of making the carousel more responsive –
+          but eventually settled on the good old "margin modifying" method.
+        </p>
+        <h4>Final touches</h4>
+        <p>
+          Once we were done with the more complex UI elements, I translated
+          the rest of our agreed-upon design into the new hopepage.
+        </p>
+      <h3>Review & Iteration</h3>
+      <p>
+        When I submitted my GitHub PR, we touched up a few issues on content, but
+        the homepage was done! The seamless submission process was made possible by
+        all our discussions and thoughtful planning before implementation – it really
+        does help to do as much thinking and working as possible before starting to code.
+      </p>
+      <h3>Launch!</h3>
+      <p>
+        Just a few days after I finished my product, Formally's new homepage was
+        officially launched! The site is fully responsive – and I think it's pretty beautiful. Take a look!
+      </p>
+      <iframe src='https://formally.us/home' title='Formally'></iframe>
+      <h3>Reflection</h3>
+      <p>
+        The process of creating Formally's homepage was a perfect example of how
+        many discrete elements are required for a project to really work. I used to think
+        that, because they're mostly static pages (that is, their content doesn't
+        require extensive computation), homepages are the simplest
+        to build. Having been involved in the content writing and design discussions, not to
+        mention creating my own custom components for the site, I now fully appreciate
+        the labor involved in making a homepage as intriguing and eye-catching it needs to be
+        in order to effectively "pitch" the app to a potential client.
+      </p>
+      <p>
+        Overall, the time I spent at Formally was incredibly meaningful. As I mentioned
+        in the overview, my grandparents were refugees – my great-grandparents were turned
+        away as they tried to flee genocide, simply because they did not have the proper visas.
+        My parents, too, are immigrants, and my own citizenship comes from the 14th Amendment, which
+        grants citizenship to anyone born on U.S. soil.
+        Formally is giving more immigrants the chance at a fair trial at the border, and it's been an honor
+        to play a part in making that happen.
+      </p>
+    </div>
+    <div id="contact-container">
+      <span id="contact">
+        <h2>Contact:</h2>
+          <ul>
+            <li><a>Email</a></li>
+            <li><a>LinkedIn</a></li>
+            <li><a>GitHub</a></li>
+          </ul>
+      </span>
+      <span class='inline'>
+        <p class="note">Resume available upon request.</p>
+      </span>
+    </div>
+  </body>

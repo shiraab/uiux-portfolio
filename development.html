@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang='en'>
+  <head>
+    <title>Development: Paint Shop</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body id='development-page'>
+  <span id="title-menu">
+    <h1>Egg's Portfolio</h1>
+    <a id="skip-nav" class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+    <a id="skip-contact" class="sr-only sr-only-focusable" href="#contact-container">Skip to contact</a>
+    <div id="menu" role="navigation">
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About this site</a>
+      <a>Contact</a>
+    </div>
+    </span>
+    <div id="title-section">
+      <a class='back-to-projects' href='./home.html#project-wrapper'><button><img src='arrow-left.svg' alt='left arrow'/>Back to projects</button></a>
+      <div class='splash-wrapper'>
+        <img src="https://media1.tenor.com/images/d82a95c242473c781c66d1f992e155ac/tenor.gif?itemid=4514528" alt="Bob says, We do not make mistakes, just happy little accidents">
+      </div>
+      <h1>Happy Accidents Paint Shop</h1>
+      <h2 class='subtitle'>A Bob Ross-themed React App</h2>
+    </div>
+    <div id="main" class='project-page'>
+      <h3>Background</h3>
+      <p>It's 2020 – life is stressful. Many people I know are going through a hard time.
+        To cheer myself and others up, I decided to create a React app where users can
+        do a relaxing, low-stress activity – browse and shop for paints. To make it
+        as absolutely chill as possible, I decided to theme my paint shop based on
+        Bob Ross's The Joy of Painting. The shop name is based on a well-known quotation
+        of his: "We don't make mistakes, just happy accidents!"
+      </p>
+      <h4>The aesthetic</h4>
+      <p>Bob Ross's aesthetic is anti-perfectionist, perhaps a little kitsch. As a result,
+        I decided to incorporate very literal aesthetic elements from the show using textured
+        backgrounds – the three materials I chose are canvas, cloth, and wood. These represent
+        various painting and palette surfaces. Together, they create a collage-like effect,
+        which amplifies the element of kitsch while still being playful.
+      </p>
+      <div class='image-card'>
+        <img src='./texture-collage.png' alt='Image showing textures of wood, cloth, and canvas.'/>
+        <p>Textured "materials" used in the app.</p>
+      </div>
+      <p>In addition, I decided to add other playful elements to the UI – for instance, calling the
+        cart "Your Palette", allowing users to add or remove one "squeeze of paint" rather
+        than a bottle or other more conventional quantity, and adding backgrounds
+        to the selected filtering buttons that reflected their functionality:
+      </p>
+      <div class='image-card'>
+        <img src='./paint-filters.png' alt='Image showing colored filters in this React app'/>
+        <p>An example of filter backgrounds in the app.</p>
+      </div>
+      <h4>Goal</h4>
+      <p>To give users a pleasant, relaxing paint shopping experience through
+        good usability and accessibility practices.</p>
+      <h3>Usability principles</h3>
+      <p>I took into account a number of usability principles in designing this app. Here are just a few:</p>
+      <h4>Learnability</h4>
+      <p>The app is structured <b>entirely on one page</b>. When the page loads, elements on the bottom are cut off,
+      meaning that <b>scrollability is clear.</b></p>
+      <p>Each section (such as filters, or the palette) has <b>clear labels</b>. Different sections – such as the cart – are <b>differentiated using various
+        backgrounds</b>, to help users easily understand the app structure.</p>
+      <p>To help users figure out which elements are clickable, I added a light <b>drop shadow</b> to all buttons or button groups.</p>
+      <p>On interaction, filter buttons' backgrounds change color based on the colors they filter (see image above!). This
+        change
+      adds usability "magic" and gives the user <b>immediate feedback</b> on what each button does.</p>
+      <h4>Memorability</h4>
+      <p>Many of the same elements which make an app learnable, such as a clear structure and direct
+      feedback, make it more memorable as well. The <b>usability "magic"</b> of certain buttons, and the
+      <b>playful labeling</b> in "palette" and "adding a squeeze," help the functionality of the app stick
+      in users' minds better.</p>
+      <h4>Accessibility</h4>
+      <p>I checked my app's accessibility using WAVE's accessibility checking extension. There
+        are no errors – meaning that <b>contrast is good</b>, and layout is accessible to screen reading
+        software. In addition, <b>tab order corresponds directly to the app structure.</b> Finally, the <b>ability
+      to undo actions</b> – for example, switching filters back to "all" or removing elements from the cart –
+      make the application more accessible overall!</p>
+      <h3>The final app</h3>
+      <iframe src='https://damp-waters-58967.herokuapp.com/' title='Happy accidents paint shop'></iframe>
+      <p>If you prefer, you can visit <a href='https://damp-waters-58967.herokuapp.com/' target='blank'>Happy Accidents Paint Shop</a>
+        in a new tab, or access the <a href='https://github.com/shiraab/uiux-development'>Git Repository.</a> </p>
+      <h3>Reflection</h3>
+      <p>This project was a great way to be creative with usability principles! I especially liked thinking about
+        elements of UX "magic," and choosing textures that would complement each other in the app. Happy painting!
+      </p>
+    </div>
+    <div id="contact-container">
+      <span id="contact">
+        <h2>Contact:</h2>
+          <ul>
+            <li><a>Email</a></li>
+            <li><a>LinkedIn</a></li>
+            <li><a>GitHub</a></li>
+          </ul>
+      </span>
+      <span class='inline'>
+        <p class="note">Resume available upon request.</p>
+      </span>
+    </div>
+  </body>
+</html>

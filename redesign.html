@@ -1,0 +1,233 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Responsive Redesign for Municipal Elections Site</title>
+    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <body id='redesign-page'>
+    <span id="title-menu">
+      <h1>Egg's Portfolio</h1>
+      <a id="skip-nav" class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+      <a id="skip-contact" class="sr-only sr-only-focusable" href="#contact-container">Skip to contact</a>
+      <div id="menu" role="navigation">
+        <a href="./home.html">Home</a>
+        <a href="./about.html">About this site</a>
+        <a>Contact</a>
+      </div>
+      </span>
+    <div id="title-section">
+      <a class='back-to-projects' href='./home.html#project-wrapper'><button><img src='arrow-left.svg' alt='left arrow'/>Back to projects</button></a>
+      <div class='splash-wrapper'>
+        <img src="./I-voted.png" alt="I voted sticker">
+      </div>
+      <h1>Getting to "I Voted"</h1>
+      <h2 class='subtitle'>A responsive redesign of a local election site</h2>
+    </div>
+    <div id="main" class='project-page'>
+      <p>2020 has been a chaotic year, especially where elections are concerned. Because of COVID, there are
+      so many differences in how elections happen – all the way from the campaign trail to
+      the ballot box. For many, their ballot box was the local post office this year.</p>
+      <p>As I was phone banking during the summer, I found that many people with whom I spoke
+         were overwhelmed with information around elections and voting. I also found that this election
+         was introducing lots of extra stress and uncertainty. If you make a mistake on your mail-in ballot,
+         will it be rejected? If you go in person, is it safe? If you vote absentee, will your ballot arrive in
+         time?
+      </p>
+      <p>Much of this information is available online, but it remains hard to parse and hard to access. This
+        means that voters may be uninformed about their registration status and vote-by-mail deadlines,
+        not to mention about changes to their polling locations for early or day-of voting.
+      </p>
+      <p className="emph">I set out to create a new UI for the elections site of the city
+        where I grew up, which could serve as an “election information center" for all voters,
+        regardless of age, ability, or previous voting experience.
+      </p>
+      <h3>Part 1: The Current Interface.</h3>
+      <p>Newton, MA's current election site is in a long, single-page format.
+        I analyzed its web and mobile versions based on four criteria:
+        <b>usability, learnability, memorability,</b> and <b>accessibility.</b>
+      </p>
+      <div class='image-card'>
+        <img src='./original-top.png' alt='top of Newton elections site'/>
+        <img src='./original-middle.png' alt='middle of Newton elections site'/>
+        <img src='./original-bottom.png' alt='footer of Newton elections site'/>
+        <p>Screenshots of Newton, MA's current election site.</p>
+      </div>
+      <h4>Usability</h4>
+      <p>Though it has all election information on it,
+        Newton’s election site is neither pleasant to look at nor easy to use.
+        It’s clear that people in city government use and update it periodically,
+        but the use of text color and icons is not consistent, making it harder
+        to find the information you’re looking for. Important information, such as
+        how to request a mail-in ballot, is often not linked or provided. Finally,
+        the mobile site is not formatted properly, meaning that sections of the site
+        (such as the image map at the top) become very difficult to use and
+        certain parts are totally cut-off.</p>
+        <p><i>Key Takeaways:</i></p>
+        <ul>
+          <li>Inconsistent use of fonts, icons, and colors makes it hard to parse information</li>
+          <li>Long, unidirectional scroll means important information gets lost</li>
+          <li>Some critical information not provided</li>
+          <li>Not fully usable on mobile</li>
+        </ul>
+      <h4>Learnability</h4>
+      <p>
+        This interface is currently structured as an information dump.
+        Because there is not much structure, there isn’t much to “learn.”
+        However, the erratic use of colors and underlines all over the page means
+        that it’s hard find patterns. For example, it's hard to understand which parts
+        of the interface are links and which aren't.
+      </p>
+      <p><i>Key Takeaways:</i></p>
+      <ul>
+        <li>Lack of pattern/structure makes it difficult to learn</li>
+        <li>Inconsistent linking means information is harder to find</li>
+      </ul>
+      <h4>Memorability</h4>
+      <p>
+        Because the site is organized erratically, with information
+        spread out all over the page with uneven formatting, it’s hard to remember
+        where on the page individual pieces of information are. Unless they are
+        one of the buttons located immediately at the top of the page, it is
+        almost impossible to remember where on the page to find polling location
+        changes or even where to find your ward and precinct.
+      </p>
+      <p><i>Key Takeaways:</i></p>
+      <ul>
+        <li>Lack of usability/learnability -> lack of memorability</li>
+        <li>Long, unidirectional scroll means that page structure is not memorable</li>
+      </ul>
+      <h4>Accessibility</h4>
+      <p>I used the WAVE accessibility checker by WebAIM to do a quick accessibility
+        audit on the elections website. What I found was concerning, given that
+        public websites are the most likely to face consequences for not being ADA-compliant.</p>
+      <p><i>Key Takeaways:</i></p>
+      <ul>
+        <li>There were several cases of missing alternative text – in fact, this was the case for the buttons at the top of the page, which turn out to be an HTML image map area. This is disappointing, since those are some of the most useful areas of the page, which involve checking voter registration and tracking ballots. Also, alt text is one of the basic ways to make sites more accessible! It’s crucial for blind and low-vision users to be able to do this just as well as anyone else.</li>
+        <li>The site doesn’t have styled focus indicators. What’s a focus indicator, you ask? It is some kind of visual indication of current element focus – often appearing as a blue outline around links or buttons. Many designers remove them for visual reasons, but it’s absolutely crucial to have them there for people who may use some combination of visual and keyboard navigation to use a site.
+        </li>
+        <li>Link text isn’t descriptive, e.g. the text used for links is “here” or “click here” rather than something related to what you’re actually clicking on.</li>
+        <li>The site uses ARIA landmarks sparingly – and doesn’t appear to have a skip link.</li>
+      </ul>
+      <h5>A digression: A bit of research and imagination</h5>
+      <p>As I thought about this site, I decided to do some further research to see how other municipalities present election information online. I found that a lot of
+        election sites use the "grid layout" with lots of icons to facilitate easy access of information. I also found, though, that most election websites either
+        did not exist or had very minimal information available on them.
+</p>
+      <h6>Sites referenced:</h6>
+      <ul>
+        <li><a href="https://wellesleyma.gov/1455/Elections-2020">Wellesley, MA Elections</a></li>
+        <li><a href="https://sudbury.ma.us/clerk/2020/10/19/presidentialelection2020/">Sudbury, MA Elections</a></li>
+        <li><a href="https://www.boston.gov/departments/election">Boston, MA Elections</a></li>
+        <li><a href="https://centrecountyvotes.com/">Centre County Votes</a></li>
+      </ul>
+      <p>I’ve done a lot of phone banking over this primary and election season, so I tried to think about some very abstract personas and use cases based on people I’ve interacted with.</p>
+      <ul>
+        <li><b>Noa</b> is an 18-year-old who’s registered to vote for the first time and is excited if terrified to be voting in her first presidential election. She is trying to find what’s on her ballot before it arrives in the mail.</li>
+        <li><b>Maureen</b> is a nurse who is pretty overloaded right now. She missed the vote-by-mail deadline and is trying to find out where to vote early, because she knows she has to be at the hospital on election day.</li>
+        <li><b>Jim</b> is in his 80s and lives alone. He has voted in-person at the local polling location for his entire adult life. The absentee ballot he requested hasn’t arrived, and he is trying to figure out why that is.</li>
+        <li><b>Ed</b> is in his late 20s and doesn’t really believe in voting, but his mother heard from the neighbors that the polling location has changed and called him for help finding out more.</li>
+      </ul>
+      <h3>Part 2: Design</h3>
+      <h4>Wireframes</h4>
+      <p>I created 3 sets of wireframes, using Balsamiq Wireframes, for Desktop, Tablet, and Phone views. Zoom in for some more information
+      on my design choices! </p>
+      <h5>Desktop</h5>
+        <div class='image-card'>
+          <img src="annotated desktop frame.png" alt="image of Desktop frame"/>
+        </div>
+      <h5>Tablet</h5>
+        <div class='image-card'>
+          <img src="tablet-annotated.png" alt="image of tablet frame"/>
+        </div>
+      <h5>Mobile</h5>
+        <div class='image-card'>
+          <img src="phone-annotated.png" alt="image of mobile frame"/>
+        </div>
+      <h4>Design – and design sheet!</h4>
+      <h5>Design principles</h5>
+      <p>A crucial element of this design was accessibility. I wanted to make this site with
+        excellent color contrast and large text. I got the main colors – dark purple with coral and
+        red accents – from an image of an "I voted" sticker, in the spirit of getting out the vote! I also
+        ended up including a proprietary "I voted" sticker icon as a recurring trope, for a playful note that
+        might also encourage users to think about that quintessential voting reward, and might therefore
+        motivate them to go vote today. (Psst. If you vote in the US, have you voted yet?)
+      </p>
+      <div class='image-card'>
+        <img src="./design-principles.png" alt="Design sheet"/>
+        <p>Design sheet for election site redesign: I checked every element for good color contrast!</p>
+      </div>
+      <h5>Desktop</h5>
+      <p>The desktop design features a broad banner on top and use of the "I voted"
+        sticker and the check as a recurring trope. I noted that a developer should use
+        CSS grids to implement the grid of quick-access actions.
+      </p>
+      <div class='image-card'>
+        <img src="./desktop-redesign.png" alt="Desktop redesign"/>
+      </div>
+      <h5>Tablet</h5>
+      <p>On both tablet and mobile, I used a hamburger menu as opposed to the full top menu. I also elided
+      some information which I viewed as extraneous, such as which elections are happening in the upcoming
+    election. I chose to do this because I believed that most phone or tablet users would be looking for
+  quick information about polling stations, how to register, and so forth, and might be able to find election
+information further down in the page. </p>
+      <div class='image-card'>
+        <img src="./tablet-redesign-expanded.png" alt="tablet redesign"/>
+      </div>
+      <h5>Mobile</h5>
+      <p>You'll notice that Tablet and Mobile views are very similar – but pay attention to the grids! Mobile
+        has a 2-element-wide grid in order to prevent crowding.</p>
+      <div class="image-card">
+        <img src="./mobile-redesign.png" alt="mobile redesign"/>
+      </div>
+      <h4>Feedback & iterations</h4>
+      <p>
+        After submitting my initial design, I received some feedback from my peers. The biggest piece
+        of feedback was that the <b>checkmarks in red and green made the design confusing</b> – users might believe
+        that the checkmarks indicate whether or not they need to do something, which was definitely not my intention!
+        As a result, I changed the color of the checkmarks to exclusively red and coral, which have a more
+        subtle difference and therefore would provide less confusion. I also put them into a <b>clearly identifiable
+        checkerboard pattern,</b> which would clarify that the different-colored checkmarks were an aesthetic choice.
+       </p>
+       <p>
+         I also added some extra drop shadows to clarify clickability.
+      </p>
+      <h3>Part 3: Responsive Prototype!</h3>
+      <p>Finally, I was able to create a <a href="https://fathomless-citadel-27397.herokuapp.com/">responsive prototype</a> based on my designs!
+        I used CSS grids to organize the various election buttons. This prototype has a skip link – try hitting tab as soon as
+        the page loads in order to skip around the page. You can navigate it entirely using keyboard navigation!
+        It's got a collapsible menu, large text and buttons, and clear information. Overall, I think the
+      implementation of these features greatly improves the voter information access experience – without leaving anyone out! </p>
+      <iframe src='https://fathomless-citadel-27397.herokuapp.com/' title='Election site redesign'></iframe>
+      <h3>Reflection</h3>
+      <p>
+        This project allowed me to practice identifying usability issues and
+        solving them. I was somewhat vindicated when, in the time since I first
+        redesigned this site, the entire newtonma.gov site underwent a full relaunch –
+        including the elections interface! It looks a lot better now, but I still think
+        there's room for improvement. See for yourself at the
+        <a href='https://www.newtonma.gov/government/elections'>new election information page!</a>
+      </p>
+    </div>
+    <div id="contact-container">
+      <span id="contact">
+        <h2>Contact:</h2>
+          <ul>
+            <li><a>Email</a></li>
+            <li><a>LinkedIn</a></li>
+            <li><a>GitHub</a></li>
+          </ul>
+      </span>
+      <span class='inline'>
+        <p class="note">Resume available upon request.</p>
+      </span>
+    </div>
+  </body>
+</html>

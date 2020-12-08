@@ -1,1 +1,490 @@
-/* Put your style information here! */
+body {
+  font-size: calc( 12px + 2vw );
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  align-items: center;
+}
+
+html {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+p, li, tr {
+  font-size: calc( 8px + 1vw );
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  /* padding: 5px; */
+  font-size: calc(20px + 2vw);
+  max-width: none;
+  min-width: none;
+}
+
+h2 {
+  font-size: calc(18px + 1vw);
+}
+
+h3 {
+  font-size: calc(16px + 0.5vw);
+}
+
+h4 {
+  font-size: calc(14px + 0.5vw);
+  font-weight: normal;
+}
+
+h2 a {
+  color: black;
+}
+
+h3 a {
+  color: black;
+}
+
+h2 {
+  font-size: calc(16px + 2vw);
+  font-style: italic;
+}
+
+h3 {
+  font-size: calc(12px + 2vw);
+  padding: 0px;
+}
+
+h4 {
+  font-size: calc(12px + 2vw);
+}
+
+h5 {
+  font-size: calc(10px + 2vw);
+}
+
+button p {
+  font-size: calc(12px + 1vw);
+}
+
+.subtitle {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+#title-menu {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  /* background-color: #537487; */
+  /* background-color: #899fac; */
+  background-color: rgba(83, 116, 135, 0.5);
+  background-color: rgba(181, 100, 70, 0.8);
+}
+
+#menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+#menu a {
+  margin: 5px;
+  color: black;
+  font-size: calc(12px + 2vw);
+  margin-left: calc(12px + 1vw);
+}
+
+.curr-page {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.project-page {
+  margin-left: 10%;
+  max-width: 80%;
+}
+
+#main {
+  margin-top: 12px;
+}
+
+#blurbdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 80%;
+  margin-left: 10%;
+  font-size: calc(14px + 2vw);
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+#blurbdiv p {
+  font-size: calc(14px + 2vw);
+}
+
+.round-img-container {
+  border-radius: 50%;
+  margin: 16px;
+}
+
+#blurbdiv .round-img-container {
+  max-width: 80%;
+  margin: 5%;
+}
+
+.round-img-container img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#blurbdiv img {
+  max-width: 90%;
+}
+
+.blurb {
+  text-align: justify;
+  padding: 5px;
+  max-width: 50%;
+}
+
+.note {
+  font-size: calc(10px + 1vw);
+  font-style: italic;
+  padding: 4px 0px;
+}
+
+#top {
+  flex-direction: row;
+  border-bottom: 2px dotted black;
+}
+
+#contact-container {
+  border-top: 2px dotted black;
+  padding: 10px;
+  background-color: rgba(83, 116, 135, 0.5);
+}
+
+#contact-container.contact-page {
+  border-top: none;
+  border-bottom: 2px dotted black;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0px;
+  padding: 0px 8px;
+}
+
+#contact li {
+  padding: 5px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 360px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact ul {
+    padding: 0px;
+    width: 100%;
+  }
+
+  #contact li {
+    padding: 5px;
+  }
+}
+
+.proj-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.note-description {
+  font-style: italic;
+}
+
+.proj-button {
+  flex-direction: column;
+  width: 100%;
+}
+
+a button {
+  color: black;
+}
+
+button {
+  all: unset;
+  margin: 0px;
+  padding: 8px;
+  text-align: left;
+  flex: 1;
+  /* background-color: white; */
+}
+
+button:hover {
+  background-color: rgba(83, 128, 149, 0.5);
+}
+
+button:focus {
+  background-color: #538095;
+}
+
+[aria-hidden="true"]{
+  display:none;
+}
+
+[aria-hidden="false"]{
+  font-size: calc(12px + 1vw);
+  padding: 5px;
+  margin: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+button h3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 4px;
+  border-radius: 8px;
+}
+
+button p {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 4px;
+  border-radius: 8px;
+}
+
+#formally {
+  background-image: url('./formally.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #018484;
+}
+
+#iterative {
+  background-image: url('./lactation-lab.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 60%;
+  background-color: #AC3B61;
+}
+
+#redesign {
+  background-image: url('./I-voted.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #25215A;
+}
+
+#development {
+  background-image: linear-gradient( rgba(255, 0, 0, 0.5), 	rgba(240,225,48, 0.5), rgba(0, 0, 255, 0.5));
+}
+
+#about-this-site {
+  font-size: calc(12px + 1vw);
+}
+
+#about-this-site p {
+  font-size: calc(12px + 1vw);
+  text-align: justify;
+}
+
+#about-this-site a {
+  padding: 0px;
+  margin: 0px;
+}
+
+.egg {
+  font-size: calc(4px + 1vw);
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.year {
+  font-size: calc(12px + 1vw);
+}
+
+div#project-grid {
+  max-width: 100%;
+  display: grid;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: space-around;
+  height: 100%;
+  /* margin-left: 10%; */
+  background-color: rgba(83, 116, 135, 0.5);
+}
+
+#project-wrapper {
+  max-width: 100%;
+  background-color: rgba(83, 116, 135, 0.3);
+  margin-top: 0px;
+}
+
+.project {
+  min-height: 200px;
+  width: calc(100% - 16px);
+  /* background-color: rgba(83, 116, 135, 0.3); */
+}
+
+iframe {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  iframe {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  iframe {
+    width: 400px;
+  }
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px grey;
+  margin-bottom: 8px;
+  max-width: 100%;
+  background-color: rgba(83, 116, 135, 0.2);
+}
+
+.image-card img {
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+
+.image-card p {
+  margin-top: 8px;
+  font-style: italic;
+}
+
+#title-section {
+  text-align: center;
+  align-items: center;
+  background-color: rgba(83, 116, 135, 0.5);
+  border-bottom: 1px solid black;
+  padding: 12px;
+}
+
+#title-section h1, #title-section h2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 50%;
+  padding-top: 4px;
+  align-self: center;
+  margin: auto;
+  margin-top: 4px;
+  border-radius: 8px;
+}
+
+#development-page #title-section {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5), 	rgba(240,225,48, 0.5));
+}
+
+#iterative-page #title-section {
+  background-color: #AC3B61;
+}
+
+#redesign-page #title-section {
+  background-color: #25215A;
+}
+
+#formally-page #title-section {
+  background-color: #018484;
+}
+
+#redesign-page #title-section h1, #redesign-page #title-section h2,
+#formally-page #title-section h1, #formally-page #title-section h2 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#redesign-page .back-to-projects button,
+#formally-page .back-to-projects button {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.splash-wrapper {
+  max-width: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  align-self: center;
+  margin: auto;
+}
+
+#about-this-site {
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.back-to-projects {
+  position: absolute;
+  left: 12px;
+  top: 92px;
+}
+
+/* .back-to-projects:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+.back-to-projects button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.back-to-projects button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.back-to-projects img {
+  margin-right: 20px;
+  margin-top: -4px;
+}
+
+tr {
+  vertical-align: top;
+}
+
+td {
+  border-top: 1px solid black;
+}
+
+table tr td:first-child, table tr th:first-child {
+  border-right: 1px solid black;
+}
+
+td, th {
+  padding: 5px;
+}
